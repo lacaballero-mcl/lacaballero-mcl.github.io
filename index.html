@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Louise Angela Caballero - Web Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8e9e9;
+      transition: background-color 0.3s ease-in-out, color 0.100s ease-in-out;
+    }
+
+    header {
+      background-color: #4b5356;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #dbc0e1;
+      padding: 0px 0;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline;
+      margin-right: 20px; /* Adjust spacing between links */
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #dbece5;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s ease-in-out;
+    }
+
+    nav a:hover {
+      color: #ea98bb;
+    }
+
+    section {
+      padding: 0px 0px;
+      text-align: center;
+      font-size: 11px;
+    }
+
+    section h2 {
+      font-size: 25px;
+    }
+
+    section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      box-shadow: 0 10.px 10px rgba(209, 198, 198, 0.1);
+      transition: transform 0.10s ease-in-out, box-shadow 0.10s ease-in-out;
+    }
+
+    section img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(255, 242, 242, 0.2);
+    }
+
+    section p {
+      font-size: 15px;
+      line-height: 2.0;
+      max-width: 2000px;
+      margin: 0 auto;
+    }
+
+    .project,
+    .skill {
+      width: 48%;
+      margin: 15px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+      text-align: center;
+    }
+
+    .project:hover,
+    .skill:hover {
+      transform: scale(1.05);
+    }
+
+    .project img,
+    .skill img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .project p,
+    .skill p {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .skills-gallery,
+    .project-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #333;
+    color: #eabde6;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+  </style>
+</head>
+<body>
+
+  <header style="padding: 20px 50px; background-color: #dfc6e7; display: flex; justify-content: space-between; align-items: center; transition: background-color 0.3s ease-in-out;">
+
+    <!-- Replace the text with your logo image, adjust the width percentage as needed -->
+    <img src="LA.png" alt="Logo" style="width: 80px; height: auto; border-radius: 50%;">
+
+    <nav>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; gap: 0px;">
+
+            <li><a href="#home" style="text-decoration: none; color: #fff; font-size: 20px; transition: color 0.3s ease;">HOME</a></li>
+
+            <li><a href="#about" style="text-decoration: none; color: #fff; font-size: 20px; transition: color 0.3s ease;">ABOUT</a></li>
+
+            <li><a href="#skills" style="text-decoration: none; color: #fff; font-size: 20px; transition: color 0.3s ease;">SKILLS</a></li>
+
+            <li><a href="#interests" style="text-decoration: none; color: #fff; font-size: 20px; transition: color 0.3s ease;">INTERESTS</a></li>
+
+            <li><a href="#projects" style="text-decoration: none; color: #fff; font-size: 20px; transition: color 0.3s ease;">PROJECTS</a></li>
+
+            <li><a href="#achievements" style="text-decoration: none; color: #fff; font-size: 20px; transition: color 0.3s ease;">ACHIEVEMENTS</a></li>
+
+            <li><a href="#contact" style="text-decoration: none; color: #fff; font-size: 20px; transition: color 0.3s ease;">CONTACT</a></li>
+
+        </ul>
+    </nav>
+
+</header>
+
+<section id="home" style="padding: 50px 100px; text-align: left; color: #333; display: flex; align-items: center;">
+
+  <!-- Your icon -->
+  <img src="icon.jpg" alt="Profile Picture" style="width: 200px; height: 14; margin-right: 50px;">
+
+  <!-- Text content -->
+  <div>
+      <h2 style="margin-bottom: 10px;">Hey there, I'm Louise Angela Caballero!</h2>
+      <p style="margin: 500;">You've just stepped into my digital universe. Dive in to explore my passions, projects, and a bit of the magic that makes me who I am.</p>
+  </div>
+
+</section>
+
+
+
+<section id="about" style="display: none; padding: 15px 90px; text-align: center; color: #333;">
+
+  <!-- Your profile picture -->
+  <img src="me.gif" alt="Profile Picture" style="width: 350px; height: auto; border-radius: 5px; margin-bottom: 20px;">
+
+  <!-- Text content -->
+  <p style="font-size: 16px; line-height: 1.6; max-width: 800px; margin: 0 auto;">
+      <strong>Greetings!</strong> I'm Louise Angela Caballero, a 2nd Year BS Computer Science student.
+      <br>
+      <strong>Aspiring UI/UX Designer:</strong> I'm passionate about creating engaging user experiences.
+      <br>
+      <strong>Favorite Activities:</strong> I enjoy dancing, playing badminton, listening to music, and exploring the great outdoors during vacations.
+      <br>
+      <strong>Creative Ventures:</strong> I love capturing breathtaking scenery through photography and creating various designs, including posters, logos, and social media graphics.
+  </p>
+</section>
+
+
+<section id="skills" style="display: flex; justify-content: space-between; padding: 30px 20px; text-align: center; color: #333;">
+
+  <div class="skill" onclick="showSkillDetails(1)" style="flex-basis: 48%;">
+
+      <img src="dancing.gif" alt="Skill 1" style="width: 100%; border-radius: 8px;">
+
+      <p style="font-size: 16px; font-weight: bold; margin-top: 10px; color: #f0b9d1;">Dancing</p>
+
+  </div>
+
+  <div class="skill" onclick="showSkillDetails(2)" style="flex-basis: 48%;">
+
+      <img src="badminton.gif" alt="Skill 2" style="width: 100%; border-radius: 8px;">
+
+      <p style="font-size: 16px; font-weight: bold; margin-top: 10px; color: #f0b9d1;">Playing Badminton</p>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+  <section id="interests" style="display: none;">
+    <h2>Interests</h2>
+    <p>
+      I am currently learning programming and seeking guidance from experienced individuals who can help me grasp coding concepts quickly. I enjoy designing various things, such as posters, logos, social media graphics, and more.
+    </p>
+  </section>
+
+
+  <section id="projects" style="display: none; text-align: center; padding: 30px 20px; color: #333;">
+
+    <div class="project-gallery" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+
+        <div class="project" onclick="showProjectDetails(1)" style="flex-basis: 30%;">
+
+            <img src="project1.jpeg" alt="Project 1" style="width: 70%; border-radius: 8px;">
+
+            <p style="font-size: 16px; font-weight: bold; margin-top: 10px; color: #333;">FOUR PICS ONE WORD</p>
+
+        </div>
+
+        <div class="project" onclick="showProjectDetails(2)" style="flex-basis: 10%;">
+
+            <img src="project2.png" alt="Project 2" style="width: 100%; border-radius: 10px;">
+
+            <p style="font-size: 16px; font-weight: bold; margin-top: 15px; color: #333;">AGRIFIL</p>
+
+        </div>
+
+        <div class="project" onclick="showProjectDetails(3)" style="flex-basis: 30%;">
+
+            <img src="project3.png" alt="Project 3" style="width: 100%; border-radius: 8px;">
+
+            <p style="font-size: 16px; font-weight: bold; margin-top: 10px; color: #333;">BULLET HEARTLAND</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="achievements" style="display: none; padding: 30px 20px; text-align: center; color: #333;">
+
+  <h2 style="font-size: 28px; color: #1b3f43;">Achievements</h2>
+
+  <ul style="list-style-type: none; padding: 0; margin: 0; text-align: middle;">
+      <li style="font-size: 16px; margin-bottom: 10px;">2012 - Mathematics Awardee, Kumon Los Baños Branch</li>
+      <li style="font-size: 16px; margin-bottom: 10px;">2019 - 2020 Grade 10 Achiever</li>
+      <li style="font-size: 16px; margin-bottom: 10px;">2020 - 2021 (Grade 11)
+          <ul style="list-style-type: disc; padding-left: 20px; margin-top: 5px; margin-bottom: 5px;">
+              Perfect Attendance
+              Honor Society
+              Academic Excellence
+          </ul>
+      </li>
+      <li style="font-size: 16px; margin-bottom: 10px;">2021 - 2022 (Grade 12) - With Honors</li>
+      <li style="font-size: 16px; margin-bottom: 10px;">2022-2023 (Freshman) - Dean’s Lister Awardee</li>
+  </ul>
+
+</section>
+
+  <section id="contact" style="display: none;">
+    <h2>Contact</h2>
+    <p>
+      How to reach me: <a href="mailto:lacquiratman@gmail.com">lacquiratman@gmail.com</a>
+    </p>
+    <p>
+      Feel free to connect with me on social media:
+    </p>
+    <p>
+      <a href="https://www.linkedin.com/in/louise-angela-caballero" target="_blank">LinkedIn</a> | <a href="https://twitter.com/louiseangela_" target="_blank">Twitter</a> | <a href="https://github.com/louiseangela" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My Personal Website. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function showSection(sectionId) {
+        document.querySelectorAll('section').forEach(section => {
+          section.style.display = 'none';
+          section.classList.remove('active');
+        });
+
+        const selectedSection = document.getElementById(sectionId);
+        selectedSection.style.display = 'block';
+        selectedSection.classList.add('active');
+      }
+
+      showSection('home');
+
+      document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const targetSectionId = this.getAttribute('href').substring(1);
+          showSection(targetSectionId);
+        });
+      });
+    });
+
+    function showSkillDetails(skillNumber) {
+      const skillDetails = document.getElementById('skill-details');
+      const skillTitle = document.getElementById('skill-title');
+      const skillImages = document.getElementById('skill-images');
+
+      // Clear previous images
+      skillImages.innerHTML = '';
+
+      for (let i = 1; i <= 3; i++) {
+        const img = document.createElement('img');
+        img.src = 'skill' + skillNumber + '-' + i + '.gif';
+        img.alt = 'Skill ' + skillNumber + ' Image ' + i;
+        skillImages.appendChild(img);
+      }
+
+      skillDetails.style.display = 'block';
+    }
+
+    function hideSkillDetails() {
+      const skillDetails = document.getElementById('skill-details');
+      skillDetails.style.display = 'none';
+    }
+
+    function showProjectDetails(projectNumber) {
+      const projectDetails = document.getElementById('project-details');
+      const projectTitle = document.getElementById('project-title');
+      const projectImages = document.getElementById('project-images');
+
+      // Clear previous images
+      projectImages.innerHTML = '';
+
+      for (let i = 1; i <= 3; i++) {
+        const img = document.createElement('img');
+        img.src = 'project' + projectNumber + '-' + i + '.jpg';
+        img.alt = 'Project ' + projectNumber + ' Image ' + i;
+        projectImages.appendChild(img);
+      }
+
+      projectDetails.style.display = 'block';
+    }
+
+    function hideProjectDetails() {
+      const projectDetails = document.getElementById('project-details');
+      projectDetails.style.display = 'none';
+    }
+  </script>
+</body>
+</html>
